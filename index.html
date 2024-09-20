@@ -11,8 +11,12 @@
   <body>
     <div id="sceneWrapper" class="not_grabbing">
       <a-scene>
+        <a-assets>
+          <img id="sky" src="sky texture.jpg">
+        </a-assets>
+        <a-sky src="#sky"></a-sky>
         <a-entity environment="preset: starry; groundColor: #445; grid: cross"></a-entity>
-
+  
         <!-- Add geometric objects (box, sphere, cylinder) to the scene -->
         <a-box position="-10 1.483 -3.000" rotation="0 0 0" color="#123f78" depth="4.5" height="3" width="0.5"></a-box>
         <a-box position="-11.500 1.483 -5" rotation="0 90 0" color="#123f78" depth="3" height="3" width="0.5"></a-box>
@@ -28,12 +32,24 @@
         <a-box position="-16.345 3.079 -20.334" rotation="40 60 90" color="#123f78" depth="3.5" height="5" width="0.5"></a-box>
         <a-box position="-18.680 3.159 -21.683" rotation="40 -120.000 90" color="#123f78" depth="3.5" height="5" width="0.5"></a-box>
 
+        <a-box position="-6.196 1.483 -20.223" rotation="0 -30 0" color="#123f78" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-6.482 1.463 -22.775" rotation="0 60 0" color="#123f78" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-8.525 1.484 -19.306" rotation="0 60 0" color="#123f78" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="-9 1.483 -22" rotation="0 -30 0" color="#123f78" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="-6.345 3.079 -20.334" rotation="40 60 90" color="#123f78" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="-8.680 3.159 -21.683" rotation="40 -120.000 90" color="#123f78" depth="3.5" height="5" width="0.5"></a-box>
 
 
+        <a-box position="10 1.483 -3.000" rotation="0 0 0" color="#123f78" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="8.5 1.483 -5" rotation="0 90 0" color="#123f78" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="8.5 1.484 -1" rotation="0 90 0" color="#123f78" depth="3" height="3" width="0.5"></a-box>
+        <a-box position="7 1.483 -3" rotation="0 0 0" color="#123f78" depth="4.5" height="3" width="0.5"></a-box>
+        <a-box position="9.655 3.159 -2.962" rotation="40 90 90" color="#123f78" depth="3.5" height="5" width="0.5"></a-box>
+        <a-box position="7.32 3.159 -2.935" rotation="40 -90.000 90" color="#123f78" depth="3.5" height="5" width="0.5"></a-box>
 
 
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-cylinder position="10 4.796 -22.827" color=#86b5d9 rotation="0 0 0"  height="10" radius="3"></a-cylinder>
+        <a-cone position="10.010 17.329 -22.827" color=#86b5d9 radius-bottom="3" radius-top="0.5" height = "15.970"></a-cone>
 
         <!-- Light for better object visibility -->
         <a-light type="ambient" color="#445451"></a-light>
